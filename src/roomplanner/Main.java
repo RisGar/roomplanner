@@ -1,5 +1,6 @@
 package roomplanner;
 
+import objects.Chair;
 import objects.Table;
 import objects.Wardrobe;
 
@@ -11,6 +12,7 @@ public class Main {
 		table.changeColour("red");
 		Wardrobe wardrobe = new Wardrobe(300, 100, 3);
 		wardrobe.MoveX(200);
+		Chair chair = new Chair();
 	}
 
 }

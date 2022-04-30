@@ -8,8 +8,8 @@ import java.util.Iterator;
 import roomplanner.Object2D;
 
 public class Wardrobe extends Object2D {
-	
-	private ArrayList<WardrobeElement> schraenke;
+
+	private ArrayList<WardrobeElement> wardrobes;
 
 	public Wardrobe(int amount) {
 		xPosition = 120;
@@ -20,9 +20,9 @@ public class Wardrobe extends Object2D {
 		int wardrobeWidth = 110;
 		width = wardrobeWidth * amount;
 		height = 60;
-		schraenke = new ArrayList<WardrobeElement>(amount);
+		wardrobes = new ArrayList<WardrobeElement>(amount);
 		for (int i = 0; i < amount; i++)
-			schraenke.add(new WardrobeElement(i * wardrobeWidth, 0, colour, orientation, wardrobeWidth, height));
+			wardrobes.add(new WardrobeElement(i * wardrobeWidth, 0, colour, orientation, wardrobeWidth, height));
 		draw();
 	}
 
@@ -35,15 +35,15 @@ public class Wardrobe extends Object2D {
 		int wardrobeWidth = 110;
 		width = wardrobeWidth * amount;
 		height = 60;
-		schraenke = new ArrayList<WardrobeElement>(amount);
+		wardrobes = new ArrayList<WardrobeElement>(amount);
 		for (int i = 0; i < amount; i++)
-			schraenke.add(new WardrobeElement(i * wardrobeWidth, 0, colour, orientation, wardrobeWidth, height));
+			wardrobes.add(new WardrobeElement(i * wardrobeWidth, 0, colour, orientation, wardrobeWidth, height));
 		draw();
 	}
 
 	protected Shape giveCurrentShape() {
 		GeneralPath wardrobeWidth = new GeneralPath();
-		for (Iterator<WardrobeElement> i = schraenke.iterator(); i.hasNext();)
+		for (Iterator<WardrobeElement> i = wardrobes.iterator(); i.hasNext();)
 			wardrobeWidth.append(((WardrobeElement) i.next()).giveCurrentShape(), false);
 		return transform(wardrobeWidth);
 	}

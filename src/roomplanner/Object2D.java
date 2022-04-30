@@ -16,7 +16,7 @@ public abstract class Object2D {
 	protected abstract Shape giveCurrentShape();
 
 	protected final Shape transform(Shape path) {
-		AffineTransform t = new	 AffineTransform();
+		AffineTransform t = new AffineTransform();
 		t.translate(xPosition, yPosition);
 		Rectangle2D bounds = path.getBounds2D();
 		t.rotate(Math.toRadians(orientation), bounds.getX() + bounds.getWidth() / 2,
