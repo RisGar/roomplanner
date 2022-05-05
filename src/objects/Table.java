@@ -23,7 +23,7 @@ public class Table extends Object2D {
 		xPosition = initX;
 		yPosition = initY;
 		colour = Color.RED;
-  ientation = 0;
+  	orientation = 0;
 		isVisible = true;
 		width = 120;
 		height = 80;

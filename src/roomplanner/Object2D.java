@@ -20,7 +20,7 @@ public abstract class Object2D {
 		t.translate(xPosition, yPosition);
 		Rectangle2D bounds = path.getBounds2D();
 		t.rotate(Math.toRadians(orientation), bounds.getX() + bounds.getWidth() / 2,
-				bounds.getY() + bounds.getHeight() / 2);
+			bounds.getY() + bounds.getHeight() / 2);
 		return t.createTransformedShape(path);
 	}
 
