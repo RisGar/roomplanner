@@ -1,5 +1,6 @@
 package objects;
 
+import java.awt.Color;
 import java.awt.Shape;
 import java.awt.geom.GeneralPath;
 
@@ -9,7 +10,7 @@ public class Chair extends Object2D {
   public Chair() {
     xPosition = 160;
     yPosition = 80;
-    colour = "blau";
+    colour = Color.BLUE;
     orientation = 0;
     isVisible = true;
     width = 45;
@@ -20,7 +21,7 @@ public class Chair extends Object2D {
   public Chair(int initX, int initY) {
     xPosition = initX;
     yPosition = initY;
-    colour = "blau";
+    colour = Color.BLUE;
     orientation = 0;
     isVisible = true;
     width = 45;

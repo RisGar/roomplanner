@@ -7,6 +7,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.Shape;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
@@ -77,14 +78,14 @@ public class Canvas {
 		redraw();
 	}
 
-	public void setForegroundColor(String colourString) {
-		Map<String, Color> colours = Map.ofEntries(entry("red", Color.RED), entry("black", Color.BLACK),
-				entry("blue", Color.BLUE), entry("yellow", Color.YELLOW), entry("green", Color.GREEN),
-				entry("purple", Color.MAGENTA), entry("white", Color.WHITE), entry("cyan", Color.CYAN),
-				entry("grey", Color.DARK_GRAY), entry("lightgrey", Color.LIGHT_GRAY), entry("orange", Color.ORANGE),
-				entry("pink", Color.PINK));
+	public void setForegroundColor(Color colour) {
+		// Map<String, Color> colours = Map.ofEntries(entry("red", Color.RED), entry("black", Color.BLACK),
+		// 		entry("blue", Color.BLUE), entry("yellow", Color.YELLOW), entry("green", Color.GREEN),
+		// 		entry("purple", Color.MAGENTA), entry("white", Color.WHITE), entry("cyan", Color.CYAN),
+		// 		entry("grey", Color.DARK_GRAY), entry("lightgrey", Color.LIGHT_GRAY), entry("orange", Color.ORANGE),
+		// 		entry("pink", Color.PINK));
 
-		graphic.setColor(colours.get(colourString));
+		graphic.setColor(colour);
 	}
 
 	public void wait(int milliseconds) {

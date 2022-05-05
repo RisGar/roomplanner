@@ -1,20 +1,20 @@
 package objects;
 
+import java.awt.Color;
 import java.awt.Shape;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
-
-import roomplanner.Object2D;
-
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Arc2D;
+
+import roomplanner.Object2D;
 
 public class Bathtub extends Object2D {
   public Bathtub() {
     xPosition = 120;
     yPosition = 150;
-    colour = "blau";
+    colour = Color.BLUE;
     orientation = 0;
     isVisible = true;
     width = 180;
@@ -25,7 +25,7 @@ public class Bathtub extends Object2D {
   public Bathtub(int initX, int initY) {
     xPosition = initX;
     yPosition = initY;
-    colour = "blau";
+    colour = Color.BLUE;
     orientation = 0;
     isVisible = true;
     width = 180;

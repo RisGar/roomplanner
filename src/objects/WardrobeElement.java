@@ -1,5 +1,6 @@
 package objects;
 
+import java.awt.Color;
 import java.awt.Shape;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
@@ -11,7 +12,7 @@ public class WardrobeElement extends Object2D {
 	public WardrobeElement() {
 		xPosition = 120;
 		yPosition = 150;
-		colour = "blau";
+		colour = Color.BLUE;
 		orientation = 0;
 		isVisible = true;
 		width = 110;
@@ -22,7 +23,7 @@ public class WardrobeElement extends Object2D {
 	public WardrobeElement(int initX, int initY) {
 		xPosition = initX;
 		yPosition = initY;
-		colour = "blau";
+		colour = Color.BLUE;
 		orientation = 0;
 		isVisible = true;
 		width = 110;

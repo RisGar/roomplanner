@@ -1,5 +1,6 @@
 package objects;
 
+import java.awt.Color;
 import java.awt.Shape;
 import java.awt.geom.GeneralPath;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ public class Wardrobe extends Object2D {
 	public Wardrobe(int amount) {
 		xPosition = 120;
 		yPosition = 150;
-		colour = "blue";
+		colour = Color.BLUE;
 		orientation = 0;
 		isVisible = true;
 		int wardrobeWidth = 110;
@@ -29,7 +30,7 @@ public class Wardrobe extends Object2D {
 	public Wardrobe(int x, int y, int amount) {
 		xPosition = x;
 		yPosition = y;
-		colour = "blue";
+		colour = Color.BLUE;
 		orientation = 0;
 		isVisible = true;
 		int wardrobeWidth = 110;
