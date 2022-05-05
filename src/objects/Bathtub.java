@@ -35,8 +35,8 @@ public class Bathtub extends Object2D {
 
   protected Shape giveCurrentShape() {
     GeneralPath bathtub = new GeneralPath();
-    Rectangle2D rand = new Rectangle2D.Double(0, 0, width, height);
-    bathtub.append(rand, false);
+    Rectangle2D path = new Rectangle2D.Double(0, 0, width, height);
+    bathtub.append(path, false);
 
     Line2D upper = new Line2D.Double(0.1 * height, 0.1 * height, width - 0.5 * height, 0.1 * height);
     Line2D left = new Line2D.Double(0.1 * height, 0.1 * height, 0.1 * height, 0.9 * height);

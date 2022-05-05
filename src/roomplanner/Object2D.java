@@ -1,5 +1,6 @@
 package roomplanner;
 
+import java.awt.Color;
 import java.awt.Shape;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.AffineTransform;
@@ -89,11 +90,17 @@ public abstract class Object2D {
 		draw();
 	}
 
-	public void changeColour(String newColour) {
+	public void changeColour(Color newColour) {
 		erase();
 		colour = newColour;
 		draw();
 	}
+
+	public void scale(double factor) {
+    width = (int) Math.round(width * factor);
+    height = (int) Math.round(height * factor);
+    draw();
+  }
 
 	public void changeSize(int widthNew, int heightNew) {
 		erase();

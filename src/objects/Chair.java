@@ -30,20 +30,15 @@ public class Chair extends Object2D {
   }
 
   protected Shape giveCurrentShape() {
-    GeneralPath stuhl = new GeneralPath();
-    stuhl.moveTo(0, 0);
-    stuhl.lineTo(width, 0);
-    stuhl.lineTo(width + (width / 20 + 1), height);
-    stuhl.lineTo(-(width / 20 + 1), height);
-    stuhl.lineTo(0, 0);
-    stuhl.moveTo(0, (width / 10 + 1));
-    stuhl.lineTo(width, (width / 10 + 1));
-    return transform(stuhl);
+    GeneralPath chair = new GeneralPath();
+    chair.moveTo(0, 0);
+    chair.lineTo(width, 0);
+    chair.lineTo(width + (width / 20 + 1), height);
+    chair.lineTo(-(width / 20 + 1), height);
+    chair.lineTo(0, 0);
+    chair.moveTo(0, (width / 10 + 1));
+    chair.lineTo(width, (width / 10 + 1));
+    return transform(chair);
   }
 
-  public void skaliere(double faktor) {
-    width = (int) Math.round(width * faktor);
-    height = (int) Math.round(height * faktor);
-    draw();
-  }
 }
