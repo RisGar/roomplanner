@@ -40,6 +40,7 @@ public class Canvas {
 	private ArrayList<Object> objects;
 	private HashMap<Object, ShapeDescription> shapes;
 
+	// Singleton canvas instance
 	private Canvas(String title, int width, int height, Color baseColour) {
 		frame = new JFrame();
 		canvas = new CanvasPane();
@@ -79,12 +80,6 @@ public class Canvas {
 	}
 
 	public void setForegroundColor(Color colour) {
-		// Map<String, Color> colours = Map.ofEntries(entry("red", Color.RED), entry("black", Color.BLACK),
-		// 		entry("blue", Color.BLUE), entry("yellow", Color.YELLOW), entry("green", Color.GREEN),
-		// 		entry("purple", Color.MAGENTA), entry("white", Color.WHITE), entry("cyan", Color.CYAN),
-		// 		entry("grey", Color.DARK_GRAY), entry("lightgrey", Color.LIGHT_GRAY), entry("orange", Color.ORANGE),
-		// 		entry("pink", Color.PINK));
-
 		graphic.setColor(colour);
 	}
 
@@ -92,7 +87,7 @@ public class Canvas {
 		try {
 			Thread.sleep(milliseconds);
 		} catch (Exception e) {
-			// ignoring exception at the moment
+			// Ignoring exception at the moment
 		}
 	}
 
@@ -133,9 +128,9 @@ public class Canvas {
 
 	private class ShapeDescription {
 		private Shape shape;
-		private String colour;
+		private Color colour;
 
-		public ShapeDescription(Shape shape, String colour) {
+		public ShapeDescription(Shape shape, Color colour) {
 			this.shape = shape;
 			this.colour = colour;
 		}
