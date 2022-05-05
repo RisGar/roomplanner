@@ -39,9 +39,10 @@ public class WardrobeElement extends Object2D {
 		isVisible = true;
 		this.width = width;
 		height = depth;
-		// no drawing
+		// no drawing as method is only used for Wardrobe class
 	}
 
+  @Override
 	protected Shape giveCurrentShape() {
 		GeneralPath wardrobe = new GeneralPath();
 		Shape outline = new Rectangle2D.Double(0, 0, width, height);

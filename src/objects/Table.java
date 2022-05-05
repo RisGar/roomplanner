@@ -30,6 +30,7 @@ public class Table extends Object2D {
 		draw();
 	}
 
+  @Override
 	protected Shape giveCurrentShape() {
 		Shape table = new Rectangle2D.Double(0, 0, width, height);
 		return transform(table);

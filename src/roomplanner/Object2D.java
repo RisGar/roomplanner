@@ -14,6 +14,7 @@ public abstract class Object2D {
 	protected int width;
 	protected int height;
 
+	// Method overridden by each subclass to draw shape
 	protected abstract Shape giveCurrentShape();
 
 	protected final Shape transform(Shape path) {

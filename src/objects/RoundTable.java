@@ -32,6 +32,7 @@ public class RoundTable extends Object2D
         draw();
     }
     
+  @Override
     protected Shape giveCurrentShape()
     {
         Shape table = new Ellipse2D.Double(0 , 0, width, height);

@@ -33,6 +33,7 @@ public class Bathtub extends Object2D {
     draw();
   }
 
+  @Override
   protected Shape giveCurrentShape() {
     GeneralPath bathtub = new GeneralPath();
     Rectangle2D path = new Rectangle2D.Double(0, 0, width, height);

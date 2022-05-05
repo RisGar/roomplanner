@@ -29,6 +29,7 @@ public class Chair extends Object2D {
     draw();
   }
 
+  @Override
   protected Shape giveCurrentShape() {
     GeneralPath chair = new GeneralPath();
     chair.moveTo(0, 0);

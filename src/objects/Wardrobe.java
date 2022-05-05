@@ -42,6 +42,7 @@ public class Wardrobe extends Object2D {
 		draw();
 	}
 
+  @Override
 	protected Shape giveCurrentShape() {
 		GeneralPath wardrobeWidth = new GeneralPath();
 		for (Iterator<WardrobeElement> i = wardrobes.iterator(); i.hasNext();)
